@@ -5,7 +5,7 @@ import './style.css';
 
 function Editor({onChange, value, id}) {
   return (
-    <textarea name="text" id={id} autocomplete="on" placeholder="Write your markdown here" spellcheck onChange={onChange} value={value}></textarea>
+    <textarea name="text" id={id} autoComplete="on" placeholder="Write your markdown here" spellCheck onChange={onChange} value={value}></textarea>
   )
 }
 
@@ -18,7 +18,7 @@ function Preview({text, id}) {
 function Markdown() {
   const [text, setText] = React.useState(defaultMD);
 
-  handleChange = (event) => {
+  const handleChange = (event) => {
     setText(event.target.value);
   }
 
