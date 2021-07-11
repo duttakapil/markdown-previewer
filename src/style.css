@@ -1,0 +1,19 @@
+.markdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+
+#editor {
+  min-height: 10em;
+  width : 40%;
+  font-size: 16px;
+}
+
+#preview {
+  min-height: 8em;
+  width: 40%;
+  border: 1px solid black;
+  padding : 10px;
+  font-size: 16px;
+}
